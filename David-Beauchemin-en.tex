@@ -20,6 +20,9 @@
 \usepackage{multirow}
 \usepackage{longtable}
 
+\usepackage{fontawesome5}
+\usepackage{fontawesome}
+
 % Fonts and tweaks for XeLaTeX
 %-----------------------------------------------
 \usepackage{fontspec,xltxtra}
@@ -65,7 +68,8 @@
 \newcolumntype{R}{p{0.8\textwidth}}
 \newcommand\VRule{\color{baseline-gray}\vrule width 0.5pt}
 
-\usepackage{fontawesome}
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
+\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
 
 \begin{document}
 	
@@ -82,6 +86,8 @@
 			\faPhone \,\, \cvphonenumber \\
 			\href{\github}{\faGithub}\,\, \href{\github}{See GitHub} \\
 			\href{\cvlinkedin}{\faLinkedinSquare}\,\, \href{\cvlinkedin}{See profile}\\
+			Fluent in \faPython\ \faRProject\ \faGit\ \LaTeX\ \faLinux \\
+			Familiar in \faJava\ \CC \ Bash/ZSH
 		}
 		
 		\vspace{10pt}
