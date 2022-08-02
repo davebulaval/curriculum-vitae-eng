@@ -17,6 +17,8 @@
 \usepackage{multirow}
 \usepackage{longtable}
 
+\usepackage{fontawesome}
+
 % Fonts and tweaks for XeLaTeX
 %-----------------------------------------------
 \usepackage{fontspec,xltxtra}
@@ -52,6 +54,8 @@
 \newcommand{\github}{https://github.com/davebulaval}
 
 \newcommand{\guillemet}[1]{\guillemotleft #1 \guillemotright}
+
+\newcommand{\link}[2]{\href{#1}{#2~{\smaller\faExternalLink*}}}
 
 % Customized subsection headers
 %-----------------------------------------------
@@ -95,12 +99,12 @@
 		\begin{tabular}{L!{\VRule}R}
 			2020 -- \tab[.7cm] & \textbf{Doctorat en informatique | Apprentissage automatique | Traitement automatique du langage naturel}\\
 			\multirow{1}{*}{\includegraphics[scale=0.1]{images/UL_P.pdf} \tab[0.6cm]} &  Université Laval \\
-			& \href{https://graal.ift.ulaval.ca/}{GRAAL - Groupe de recherche en apprentissage automatique de l'Université Laval}\\
+			& \link{https://graal.ift.ulaval.ca/}{GRAAL - Groupe de recherche en apprentissage automatique de l'Université Laval}\\
 			&\\[-6pt]
 			
 			2018 -- 2020           & \textbf{Maîtrise en informatique | Apprentissage automatique | Traitement automatique du langage naturel}\\
 			\multirow{1}{*}{\includegraphics[scale=0.1]{images/UL_P.pdf} \tab[0.6cm]}  &  Université Laval \\
-			& \href{https://graal.ift.ulaval.ca/}{GRAAL - Groupe de recherche en apprentissage automatique de l'Université Laval}\\
+			& \link{https://graal.ift.ulaval.ca/}{GRAAL - Groupe de recherche en apprentissage automatique de l'Université Laval}\\
 			& Sujet mémoire: \textit{Détection de doublons parmi des informations non structurées provenant de sources de données externes}\\
 			&\\[-6pt]
 			
@@ -116,20 +120,16 @@
 		
 		\subsection{Professionnelles}
 		\begin{tabular}{L!{\VRule}R}
-			2019 -- \tab[.7cm] &{\bf {Expert en intelligence artificielle et vice-président des opérations}}\\
-			\multirow{1}{*}{\includegraphics[scale=0.075]{images/Baseline.png} \tab[1.1cm]}					&Baseline\\
-			& Recherche appliquée de solution en IA pour des clients \& formations sur mesure en IA\\
-			&\\[-6pt]
 			2019 -- \tab[.7cm] &{\bf {Fondateur, recherchiste, et intervieweur}}\\
-			\multirow{1}{*}{\includegraphics[scale=0.025]{images/OpenLayer.png} \tab[0.8cm]}& \href{https://www.youtube.com/channel/UCB3tYpZ1ojiqAroyDN05Cyw}{OpenLayer podcas}t\\
-			& Création de contenu en IA \\ 
+			\multirow{1}{*}{\includegraphics[scale=0.025]{images/OpenLayer.png} \tab[0.8cm]}& \link{https://www.youtube.com/channel/UCB3tYpZ1ojiqAroyDN05Cyw}{OpenLayer podcast}\\
+			& Création de contenu en IA avec plus de 30 000 vues sur une cinquantaine d'épisodes\\ 
 			&\\[-6pt]
 			2018 -- \tab[.7cm]   &{\bf {Organisation d'événements}}\\
 			\multirow{1}{*}{\includegraphics[scale=0.025]{images/meetup.png} \tab[0.8cm]}& Meetup Machine Learning Québec\\
 			& Co-organisation des différents événements à Québec \\ 
 			&\\[-6pt]
 			2019 -- 2020   &{\bf {Développeur}}\\
-			\multirow{1}{*}{\includegraphics[scale=0.15]{images/poutyne.png} \tab[0.18cm]}& \href{https://poutyne.org/}{Poutyne}\\
+			\multirow{1}{*}{\includegraphics[scale=0.15]{images/poutyne.png} \tab[0.18cm]}& \link{https://poutyne.org/}{Poutyne}\\
 			& Développement de fonctionnalité \\ 
 			&\\[-6pt]
 			2019 -- 2020  &{\bf {Scientifique IA}}\\
@@ -139,7 +139,10 @@
 		
 		\subsection{Enseignements}
 		\begin{tabular}{L!{\VRule}R}
-			2016 -- \tab[.7cm] &{\bf {Auxiliaire de cours}}\\
+			2022 -- \tab[.7cm] &{\bf {Auxiliaire d'enseignement}}\\
+			\multirow{1}{*}{\includegraphics[scale=0.1]{images/UL_P.pdf} \tab[0.6cm]}  &  Université Laval, Département d'informatique et de génie logiciel \\
+			& Base de données avancées (GLO-4035/GLO-7035)\\ 
+			2016 -- 2022 &{\bf {Auxiliaire de cours}}\\
 			\multirow{1}{*}{\includegraphics[scale=0.1]{images/UL_P.pdf} \tab[0.6cm]}  &  Université Laval, École d'actuariat \\
 			& Introduction à l'actuariat I, Gestion du risque financier I, Analyse et traitement collectif du risque, Informatique pour Laval University, Méthodes numériques en actuariat, Mathématiques actuarielles IARD II, Modèles linéaires en actuariat, Programmation avec R pour l'analyse de données, Correction des rapports de stage \\ 
 			&\\[-6pt]
@@ -150,6 +153,11 @@
 		
 		\subsection{Recherches et supervision de stagiaire}
 		\begin{tabular}{L!{\VRule}R}
+			2021 -- \tab[.7cm] &{\bf {Auxiliaire de recherche}}\\
+			\multirow{1}{*}{\includegraphics[scale=0.1]{images/UL_P.pdf} \tab[0.6cm]}  &  Université Laval\\
+			& Supervision de deux stagiaires pour projet de recherche doctorale \guillemet{Synthèse, reformulation et explication automatiques des contrats d'assurance} \\ 
+			& Richard Khoury\\ 
+			&\\[-6pt]
 			2020 -- \tab[.7cm] &{\bf {Auxiliaire de recherche}}\\
 			\multirow{1}{*}{\includegraphics[scale=0.1]{images/UL_P.pdf} \tab[0.6cm]}  &  Université Laval, IID - Institut intelligence et données\\
 			& Supervision de deux stagiaires dans le projet \guillemet{femmes face aux défis de la transformation numérique : une étude de cas dans le secteur des assurances} \\ 
@@ -181,43 +189,42 @@
 			& Luc Lamontagne
 		\end{tabular}
 	
-		\vspace{10pt}
+		\newpage
 		
 		\section*{Publications}
 		\subsection*{\hspace{.5cm} Article}
 		\begin{tabular}{L!{\VRule}R}
-	2022 & Vincent Primpied, David Beauchemin, and Richard Khoury. \href{https://caiac.pubpub.org/pub/iaeeogod}{\textit{Quantifying French Document Complexity}}. Proceedings of the Canadian Conference on Artificial Intelligence.\\
+	2022 & David Beauchemin, and Marie-Claire Monty. \link{https://hal.archives-ouvertes.fr/hal-03736828v2}{\textit{La discrimination en intelligence artificielle est-elle suffisamment encadrée ?}}. Preprint HAL:03736828.\\
+	2022 & Vincent Primpied, David Beauchemin, and Richard Khoury. \link{https://caiac.pubpub.org/pub/iaeeogod}{\textit{Quantifying French Document Complexity}}. Proceedings of the Canadian Conference on Artificial Intelligence.\\
 	&\\[-6pt] 
-	2022 & David Beauchemin, Julien Laumonier, Yvan Le Ster, and Marouane Yassine. \href{https://caiac.pubpub.org/pub/72bhunl6}{\textit{``FIJO'': a French Insurance Soft Skill Detection Dataset}}. Proceedings of the Canadian Conference on Artificial Intelligence.\\
+	2022 & David Beauchemin, Julien Laumonier, Yvan Le Ster, and Marouane Yassine. \link{https://caiac.pubpub.org/pub/72bhunl6}{\textit{``FIJO'': a French Insurance Soft Skill Detection Dataset}}. Proceedings of the Canadian Conference on Artificial Intelligence.\\
 	&\\[-6pt] 
-	2021 & Marouane Yassine, David Beauchemin, François Laviolette et Luc Lamontagne. \href{https://arxiv.org/abs/2112.04008}{\textit{Multinational Address Parsing: A Zero-Shot Evaluation}}. Accepted in the International Journal of Information Science and Technology (iJIST)\\
+	2021 & Marouane Yassine, David Beauchemin, François Laviolette et Luc Lamontagne. \link{https://arxiv.org/abs/2112.04008}{\textit{Multinational Address Parsing: A Zero-Shot Evaluation}}. Accepted in the International Journal of Information Science and Technology (iJIST)\\
 	&\\[-6pt] 	
-	2021 & Marouane Yassine, David Beauchemin, François Laviolette et Luc Lamontagne. \href{https://arxiv.org/abs/2006.16152}{\textit{Leveraging Subword Embeddings for Multinational Address Parsing}}. IEEE CiSt, MNLP. \\
+	2021 & Marouane Yassine, David Beauchemin, François Laviolette et Luc Lamontagne. \link{https://arxiv.org/abs/2006.16152}{\textit{Leveraging Subword Embeddings for Multinational Address Parsing}}. IEEE CiSt, MNLP. \\
 	&\\[-6pt] 		
-	2020 & David Beauchemin, Nicolas Garneau, Eve Gaumond, Pierre-Luc Déziel, Richard Khoury et Luc Lamontagne. \href{https://arxiv.org/abs/2011.12183}{\textit{Generating Intelligible Plumitifs Summaries: Use Case Application with Ethical Considerations}}. The 13th International Conference on Natural Language Generation. \\
+	2020 & David Beauchemin, Nicolas Garneau, Eve Gaumond, Pierre-Luc Déziel, Richard Khoury et Luc Lamontagne. \link{https://arxiv.org/abs/2011.12183}{\textit{Generating Intelligible Plumitifs Summaries: Use Case Application with Ethical Considerations}}. The 13th International Conference on Natural Language Generation. \\
 				&\\[-6pt] 
-	2019 &  Nicolas Garneau, Mathieu Godbout, David Beauchemin, Audrey Durand et Luc Lamontagne. \href{https://arxiv.org/abs/1912.01706}{\textit{A Robust Self-Learning Method for Fully Unsupervised Cross-Lingual Mappings of Word Embeddings: Making the Method Robustly Reproducible as Well}}. REPORLANG@LREC2020.
+	2019 &  Nicolas Garneau, Mathieu Godbout, David Beauchemin, Audrey Durand et Luc Lamontagne. \link{https://arxiv.org/abs/1912.01706}{\textit{A Robust Self-Learning Method for Fully Unsupervised Cross-Lingual Mappings of Word Embeddings: Making the Method Robustly Reproducible as Well}}. REPORLANG@LREC2020.
 		\end{tabular}
 		
 		\subsection*{\hspace{.5cm} Non scientifique}
 		
 		\begin{tabular}{L!{\VRule}R}
-			2017 & David Beauchemin et Vincent Goulet \textit{\href{https://www.tug.org/TUGboat/Contents/contents38-3.html}{Typesetting actuarial symbols easily and consistently with actuarialsymbol and actuarialangle}}
+			2017 & David Beauchemin et Vincent Goulet \textit{\link{https://www.tug.org/TUGboat/Contents/contents38-3.html}{Typesetting actuarial symbols easily and consistently with actuarialsymbol and actuarialangle}}
 		\end{tabular}
 		
 		\subsection*{\hspace{.5cm} Paquetages}
 		
 		\begin{tabular}{L!{\VRule}R}
-			2020 & Marouane Yassine et David Beauchemin \textit{\href{https://deepparse.org}{Deepparse: A state-of-the-art deep learning multinational addresses parser}}\\
+			2020 & Marouane Yassine et David Beauchemin \textit{\link{https://deepparse.org}{Deepparse: A state-of-the-art deep learning multinational addresses parser}}\\
 			&\\[-6pt] 
-			2019 & David Beauchemin \textit{\href{http://notificationdoc.ca/}{Notif: The notification package for every Python project}}\\
+			2019 & David Beauchemin \textit{\link{http://notificationdoc.ca/}{Notif: The notification package for every Python project}}\\
 			&\\[-6pt] 
-			2017 & Simon-Pierre Gadoury et David Beauchemin \textit{\href{https://cran.r-project.org/web/packages/nCopula/index.html}{nCopula: Hierarchical Archimedean Copulas Through Multivariate Compound Distributions}} \\
+			2017 & Simon-Pierre Gadoury et David Beauchemin \textit{\link{https://cran.r-project.org/web/packages/nCopula/index.html}{nCopula: Hierarchical Archimedean Copulas Through Multivariate Compound Distributions}} \\
 			&\\[-6pt]  
-			2017 & Vincent Goulet et David Beauchemin \textit{\href{http://ctan.org/pkg/actuarialsymbol}{actuarialsymbol - Actuarial notation with \LaTeX}}
+			2017 & Vincent Goulet et David Beauchemin \textit{\link{http://ctan.org/pkg/actuarialsymbol}{actuarialsymbol - Actuarial notation with \LaTeX}}
 		\end{tabular}
-	
-		\newpage
 		
 		
 		\section*{Communications}
@@ -225,7 +232,7 @@
 		
 		\begin{tabular}{L!{\VRule}R}
 			
-			2019 & \textbf{\href{http://raquebec.ulaval.ca/2019/event/les-tests-automatises-en-r}{Les tests automatisés en R}}\\
+			2019 & \textbf{\link{http://raquebec.ulaval.ca/2019/event/les-tests-automatises-en-r}{Les tests automatisés en R}}\\
 			& R à Québec\\
 			&\\[-6pt]
 			2019 & \textbf{Extraction d'information à partir du Web}\\
@@ -234,17 +241,29 @@
 			2019 & \textbf{Atelier pratique en \faGit}\\
 			& Meetup Machine Learning Québec\\
 			&\\[-6pt]
-			2017 & \textbf{\href{https://vigou3.github.io/raquebec-atelier-introduction-r/}{Formation d'introduction à R}}\\
+			2017 & \textbf{\link{https://vigou3.github.io/raquebec-atelier-introduction-r/}{Formation d'introduction à R}}\\
 			& R à Québec\\
 			&\\[-6pt]
-			2017 & \textbf{\href{https://davebulaval.github.io/R_Markdown/}{R \& Markdown}}\\
+			2017 & \textbf{\link{https://davebulaval.github.io/R_Markdown/}{R \& Markdown}}\\
 			& École d'actuariat
 		\end{tabular}
-				
+	
 		\subsection*{\hspace{.5cm} Conférences}	
 		\begin{tabular}{L!{\VRule}R}
-			2020  & \textbf{La reproductibilité en apprentissage automatique}\\
-			&  Webinaires de l'IID\\
+			2022  & \link{https://webaquebec.org/programmation/le-modele-cooperatif-en-ti-une-utopie-de-la-gaugauche-ou-une-realite/}{\textbf{Le modèle coopératif en TI: une utopie de la « gaugauche » ou une réalité}}\\
+			&  WAQ\\
+			&  Québec, Canada \\
+			&\\[-6pt]
+			2022  & \textbf{Automatiser l'explication des contrats d'assurance, rêve ou réalité?}\\
+			&  Insurtech\\
+			&  Québec, Canada \\
+			&\\[-6pt]
+			2022  & \link{https://mdi.georgetown.edu/linkage-seminar/ai-and-duplicate-detection-to-leverage-external-data-sources-david-beauchemin/}{\textbf{AI and Duplicate Detection to Levrage External Data Source}}\\
+			&  Massive Data Institude\\
+			&  Georgetown University, USA \\
+			&\\[-6pt]
+			2020 -- 2022  & \textbf{La reproductibilité en apprentissage automatique}\\
+			&  Webinaires de l'IID et bootcamp IID\\
 			&  Université Laval, Canada \\
 			&\\[-6pt]
 			2020  & \textbf{Detection of Duplicates Among Non-structured Data From Different Data Sources}\\
@@ -258,12 +277,12 @@
 			&  Atelier scientifique Intact\\
 			&  Université Laval, Canada \\
 			&\\[-6pt]
-			2019 & \textbf{\href{https://davebulaval.github.io/bonnes-pratiques-git-material/}{Bonnes pratiques \& \faGit}}\\
+			2019 & \textbf{\link{https://davebulaval.github.io/bonnes-pratiques-git-material/}{Bonnes pratiques \& \faGit}}\\
 			& IFT-6010 \\
 			& Université Laval, Canada\\
 			&\\[-6pt]
-			2019 & \textbf{\href{http://raquebec.ulaval.ca/2019/event/lassurance-qualite-et-le-calcul-scientifique}{Assurance qualité, calcul scientifique \& R}}\\
-			& R à Québec \& \href{https://www.ulaval.ca/les-etudes/chaires-de-leadership-en-enseignement-cle/les-chaires-de-leadership-en-enseignement/sciences-et-developpement-durable.html}{CLESSN}\\
+			2019 & \textbf{\link{http://raquebec.ulaval.ca/2019/event/lassurance-qualite-et-le-calcul-scientifique}{Assurance qualité, calcul scientifique \& R}}\\
+			& R à Québec \& \link{https://www.ulaval.ca/les-etudes/chaires-de-leadership-en-enseignement-cle/les-chaires-de-leadership-en-enseignement/sciences-et-developpement-durable.html}{CLESSN}\\
 			& Université Laval, Canada\\
 			&\\[-6pt]
 			2019  & \textbf{Information gathering using external unstructured data sources}\\
@@ -273,7 +292,9 @@
 			2019  & \textbf{Classification de doublons de risques commerciaux}\\
 			&  Atelier scientifique Intact\\
 			&  Université Laval, Canada \\
-			&\\[-6pt]
+		\end{tabular}
+				
+		\begin{tabular}{L!{\VRule}R}
 			2019 & \textbf{Introduction à Scikit-learn}\\
 			& École d'été des stagiaires du Groupe de recherche en apprentissage automatique de l'Université Laval\\
 			& Université Laval, Canada\\
@@ -282,17 +303,18 @@
 			&  GLO-7035\\
 			&  Université Laval, Canada \\
 			&\\[-6pt]
-			2017  & \textbf{\href{https://github.com/davebulaval/Actulab_COOP}{Où sont les clients que nous ciblons?}}\\
-			&  \href{http://www.actulab.ca}{Actulab}\\
+			2017  & \textbf{\link{https://github.com/davebulaval/Actulab_COOP}{Où sont les clients que nous ciblons?}}\\
+			&  \link{http://www.actulab.ca}{Actulab}\\
 			&  Université Laval, Canada
 		\end{tabular}
 	
 		\subsection*{\hspace{.5cm} Article de blogue}
 		\begin{tabular}{L!{\VRule}R}
 			2020  & \textbf{Training a Recurrent Neural Network (RNN) Using PyTorch}\\
-			&  \href{https://www.dotlayer.org/en/blog/2020-08-19-train-a-sequence-model-with-poutyne/machine-learning/}{.Layer}
+			&  \link{https://www.dotlayer.org/en/blog/2020-08-19-train-a-sequence-model-with-poutyne/machine-learning/}{.Layer}
 		\end{tabular}
 		
+		\newpage
 		\section*{Bourses}
 		\begin{tabular}{L!{\VRule}R}
 			2022 -- \tab[.7cm] & \textbf{Bourse de recherche FQRNT} \\
@@ -339,11 +361,13 @@
 			&\\[-6pt]
 			2020 -- \tab[.7cm] & \textbf{Comité éditorial du blogue}\\
 			& Président \\
-			& \href{https://www.dotlayer.org/}{.Layer}\\
-			&\\[-6pt]
+			& \link{https://www.dotlayer.org/}{.Layer}\\
+			\end{tabular}
+		
+		\begin{tabular}{L!{\VRule}R}
 			2020 -- \tab[.7cm] & \textbf{Comité de développement de \textit{Data Universal Tool}}\\
 			& Président\\
-			& \href{https://www.dotlayer.org/}{.Layer}\\
+			& \link{https://www.dotlayer.org/}{.Layer}\\
 			&\\[-6pt]
 			2020 & \textbf{Atelier de co-design prospectif en IA}\\
 			& Participant \\
@@ -371,19 +395,19 @@
 		
 		\subsection*{\hspace{.5cm} Coopérative}
 		\begin{tabular}{L!{\VRule}R}
-			2020 -- \tab[.7cm]  & \textbf{\href{https://baseline.quebec/}{Baseline}} \\
+			2020 -- \tab[.7cm]  & \textbf{\link{https://baseline.quebec/}{Baseline}} \\
 			\multirow{1}{*}{\includegraphics[scale=0.075]{images/Baseline.png} \tab[1.1cm]} & Président du conseil d'administration de la coopérative de travailleurs Baseline en intelligence artificielle\\
 			& Québec, Canada
 		\end{tabular}
 
 		\subsection*{\hspace{.5cm} Organisme à but non lucratif}
 		\begin{tabular}{L!{\VRule}R}
-			2021 -- \tab[.7cm]  & \textbf{\href{https://www.dotlayer.org/}{.Layer}} \\
+			2021 -- \tab[.7cm]  & \textbf{\link{https://www.dotlayer.org/}{.Layer}} \\
 			\multirow{1}{*}{\includegraphics[scale=0.055]{images/DotLayer.png} \tab[1cm]}& Président du conseil d'administration \\
 			& Québec, Canada\\
 			&\\
 			&\\[-6pt]   
-			2019 -- 2021  & \textbf{\href{https://www.dotlayer.org/}{.Layer}} \\
+			2019 -- 2021  & \textbf{\link{https://www.dotlayer.org/}{.Layer}} \\
 			\multirow{1}{*}{\includegraphics[scale=0.055]{images/DotLayer.png} \tab[1cm]}& Vice-président au développement des affaires\\
 			& Québec, Canada\\
 			&\\
